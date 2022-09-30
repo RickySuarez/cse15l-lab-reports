@@ -47,15 +47,15 @@
 
     ![SSH Key](sshKey.png)
 
-    After the creation of these keys, it is important to copy the public key to the server as noted earlier. Make sure to create a folder titled .ssh and then on the server and then run the following code(using the specific client's path for the public key) in order to copy the necessary file:
+    After the creation of these keys, it is important to copy the public key to the server as noted earlier. Make sure to create a folder titled .ssh and then on the server run the following code (using the specific client's path for the public key) in order to copy the necessary file:
 
     ![Public Key Copy](sshPublicKeyCopy.png)
 
-    Lastly, if you are on a windows operating system, it is important to run start the `ssh-agent` service and `ssh-add` in order to ensure that the key operates as it should each time the client is rebooted. Note that in order to do this, you **MUST** run PowerShell as an administrator and then type the following commands:
+    Lastly, if you are on a windows operating system, it is important to run the `ssh-agent` service and `ssh-add` in order to ensure that the key operates as it should each time the client is rebooted. Note that in order to do this, you **MUST** run PowerShell as an administrator and then type the following commands:
 
     ![ssh-add](ssh-add.png)
 
-    The results of utilizing SSH Keys is immediately apparent. Before having the keys, changing, copying, and running code on a server took me about 1 minute and 53 seconds. After having the key, this was reduced to 1 minute and 11 seconds. Obviously the time will vary depending on how fast the user can type.
+    The results of utilizing SSH Keys are immediately apparent. Before having the keys, changing, copying, and running code on a server took me about 1 minute and 53 seconds. After having the key, this was reduced to 1 minute and 11 seconds. Obviously the time will vary depending on how fast the user can type.
 
     Changing/running code *without* SSH Key:
     ![Time Test](timeTest.png)
@@ -65,7 +65,7 @@
 
 * Optimize Remote Running
 
-    By utilizing some clever commands and thinking ahead, it is possible for the user to maximize their workflow. By chaining together commands and reusing previous lines of code by using the <img src="upArrowKey.png" style="width:17px;"/> key, it is possible to copy, compile, and run code in quickly and efficiently.
+    By utilizing some clever commands and thinking ahead, it is possible for the user to maximize their workflow. By chaining together commands and reusing previous lines of code by using the <img src="upArrowKey.png" style="width:19px;"/> key, it is possible to copy, compile, and run code quickly and efficiently.
 
     Below is an example of how to copy, compile, and run code using only two key strokes:
 
