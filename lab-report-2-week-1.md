@@ -15,7 +15,7 @@
     
     If done correctly, the terminal should look like this:
 
-    ![Initial Login](initialLogin.png)
+    ![InitialLogin](initialLogIn.png)
 
 * Trying Some Commands
 
@@ -65,8 +65,8 @@
 
 * Optimize Remote Running
 
-By utilizing some clever commands and thinking ahead, it is possible for the user to maximize their workflow. By chaining together commands and reusing previous lines of code by using the <img src="upArrowKey.png" style="width:17px;"/> key, it is possible to copy, compile, and run code in quickly and efficiently.
+    By utilizing some clever commands and thinking ahead, it is possible for the user to maximize their workflow. By chaining together commands and reusing previous lines of code by using the <img src="upArrowKey.png" style="width:17px;"/> key, it is possible to copy, compile, and run code in quickly and efficiently.
 
-Below is an example of how to copy, compile, and run code using only two key strokes:
+    Below is an example of how to copy, compile, and run code using only two key strokes:
 
-![2 Key Strokes](2KeyStrokes.png)
+    ![2 Key Strokes](2KeyStrokes.png)
