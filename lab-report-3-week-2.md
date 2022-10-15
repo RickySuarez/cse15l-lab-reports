@@ -1,6 +1,6 @@
 # Week 3 Lab Report
 
-## Part 1:
+## **Part 1: A Simple Search Engine**
 
 In this par of the lab, I coded a search engine that takes in strings, stores them, and then searches for the strings based on the information gathered from the URL. Below is the code that is used to run the website:
 
@@ -81,3 +81,40 @@ The last command that can be given to the program is search. To do this, the pro
 ![No Path](nopath.png) ![No Results](noresults.png)
 
 Some possibilities of errors include a nonexistent path as well as searching for a string that is not in the list. If a nonexistent path is in the URL, the program displays a 404 error but on the other hand, if the ArrayList is empty or there are no strings containing the search term, the program will simply state that there are no such elements.
+
+---
+## **Part 2: Debugging**
+
+Now I would like to talk about two errors I found while debugging some code. In order to do this, I want to talk about the failure-inducing inputs, the symptoms, the bug, and why it is that the bugs caused those symptoms. 
+
+## Test 1:
+
+![Incorrect Reverse](incorrectreverse.png)
+
+![Test Reversed](testreversed.png)
+
+![Failure](failure.png)
+
+* The failure inducing input is the array containg {3} (although this will fail for all arrays of size one or greater).
+
+* The symptom is that the method is returning an unexpected array. It should be reversed but instead, the array changed the values altogether.
+
+* The bug is that the old array is being assigned the values from the new array. It then returns the old array. This means that the old array is being overwritten by an array containing nothing but 0.
+
+* The bug causes this symptom because instead of returning an array which has reversed elements, it assigns each element of the array to be 0.
+
+## Test 2:
+![Bug](bug2.png)
+
+![test 2](test2.png)
+
+![failed](failed2.png)
+
+* The failure inducing input in this case is all linked lists with at least one element
+
+* The symptom is that toString() returns one extra space.
+
+* The bug is that the s string is returned without deleting the extra space.
+
+* This bug causes that symptom because the string is returned with an extra space. This could be fixed by returning `s.substring(0, s.length() - 1)` instead.
+
