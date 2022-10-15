@@ -2,7 +2,7 @@
 
 ## **Part 1: A Simple Search Engine**
 
-In this par of the lab, I coded a search engine that takes in strings, stores them, and then searches for the strings based on the information gathered from the URL. Below is the code that is used to run the website:
+In this part of the lab, I coded a search engine that takes in strings, stores them, and then searches for the strings based on the information gathered from the URL. Below is the code that is used to run the website:
 
 ```
 import java.io.IOException;
