@@ -56,58 +56,58 @@
   ## Example 1:
 
     ```
-    [cs15lfa22nx@ieng6-202]:Lab:511$ grep "BIOMED" find-results.txt
-    [cs15lfa22nx@ieng6-202]:Lab:512$ grep -i "BIOMED" find-results.txt
-    ./technical/biomed
-    ./technical/biomed/1468-6708-3-1.txt
-    ./technical/biomed/1468-6708-3-10.txt
-    ./technical/biomed/1468-6708-3-3.txt
-    ./technical/biomed/1468-6708-3-4.txt
-    ./technical/biomed/1468-6708-3-7.txt
-    ./technical/biomed/1471-2091-2-10.txt
-    ./technical/biomed/1471-2091-2-11.txt
-    ./technical/biomed/1471-2091-2-12.txt
-    ./technical/biomed/1471-2091-2-13.txt
-    ./technical/biomed/1471-2091-2-16.txt
-    ./technical/biomed/1471-2091-2-5.txt
-    ./technical/biomed/1471-2091-2-7.txt
-    ./technical/biomed/1471-2091-2-9.txt
-    ./technical/biomed/1471-2091-3-13.txt
-    ./technical/biomed/1471-2091-3-14.txt
-    ./technical/biomed/1471-2091-3-15.txt
-    ./technical/biomed/1471-2091-3-16.txt
-    ./technical/biomed/1471-2091-3-17.txt
-    ./technical/biomed/1471-2091-3-18.txt
-    ./technical/biomed/1471-2091-3-22.txt
-    ./technical/biomed/1471-2091-3-23.txt
-    ./technical/biomed/1471-2091-3-30.txt
-    ./technical/biomed/1471-2091-3-31.txt
-    ./technical/biomed/1471-2091-3-4.txt
-    ./technical/biomed/1471-2091-3-8.txt
-    ./technical/biomed/1471-2091-4-1.txt
-    ./technical/biomed/1471-2091-4-5.txt
-    ./technical/biomed/1471-2105-1-1.txt
-    ./technical/biomed/1471-2105-2-1.txt
-    ./technical/biomed/1471-2105-2-8.txt
-    ./technical/biomed/1471-2105-2-9.txt
-    ./technical/biomed/1471-2105-3-12.txt
-    ./technical/biomed/1471-2105-3-14.txt
-    ./technical/biomed/1471-2105-3-16.txt
-    ./technical/biomed/1471-2105-3-17.txt
-    ./technical/biomed/1471-2105-3-18.txt
-    ./technical/biomed/1471-2105-3-2.txt
-    ./technical/biomed/1471-2105-3-22.txt
-    ...
+  [cs15lfa22nx@ieng6-202]:Lab:511$ grep "BIOMED" find-results.txt
+  [cs15lfa22nx@ieng6-202]:Lab:512$ grep -i "BIOMED" find-results.txt
+  ./technical/biomed
+  ./technical/biomed/1468-6708-3-1.txt
+  ./technical/biomed/1468-6708-3-10.txt
+  ./technical/biomed/1468-6708-3-3.txt
+  ./technical/biomed/1468-6708-3-4.txt
+  ./technical/biomed/1468-6708-3-7.txt
+  ./technical/biomed/1471-2091-2-10.txt
+  ./technical/biomed/1471-2091-2-11.txt
+  ./technical/biomed/1471-2091-2-12.txt
+  ./technical/biomed/1471-2091-2-13.txt
+  ./technical/biomed/1471-2091-2-16.txt
+  ./technical/biomed/1471-2091-2-5.txt
+  ./technical/biomed/1471-2091-2-7.txt
+  ./technical/biomed/1471-2091-2-9.txt
+  ./technical/biomed/1471-2091-3-13.txt
+  ./technical/biomed/1471-2091-3-14.txt
+  ./technical/biomed/1471-2091-3-15.txt
+  ./technical/biomed/1471-2091-3-16.txt
+  ./technical/biomed/1471-2091-3-17.txt
+  ./technical/biomed/1471-2091-3-18.txt
+  ./technical/biomed/1471-2091-3-22.txt
+  ./technical/biomed/1471-2091-3-23.txt
+  ./technical/biomed/1471-2091-3-30.txt
+  ./technical/biomed/1471-2091-3-31.txt
+  ./technical/biomed/1471-2091-3-4.txt
+  ./technical/biomed/1471-2091-3-8.txt
+  ./technical/biomed/1471-2091-4-1.txt
+  ./technical/biomed/1471-2091-4-5.txt
+  ./technical/biomed/1471-2105-1-1.txt
+  ./technical/biomed/1471-2105-2-1.txt
+  ./technical/biomed/1471-2105-2-8.txt
+  ./technical/biomed/1471-2105-2-9.txt
+  ./technical/biomed/1471-2105-3-12.txt
+  ./technical/biomed/1471-2105-3-14.txt
+  ./technical/biomed/1471-2105-3-16.txt
+  ./technical/biomed/1471-2105-3-17.txt
+  ./technical/biomed/1471-2105-3-18.txt
+  ./technical/biomed/1471-2105-3-2.txt
+  ./technical/biomed/1471-2105-3-22.txt
+  ...
     ```
 
     Here is a basic example of using it to find some paths. In the first line, in both lines, BIOMED is in all capital letters but the second command containing `-i` is the only command the produced results because capitalization is ignored
 
   ## Example 2:
     ```
-    [cs15lfa22nx@ieng6-202]:Lab:527$ grep -o "studies" technical/biomed/rr74.txt | wc
-      7       7      56
-    [cs15lfa22nx@ieng6-202]:Lab:528$ grep -oi "studies" technical/biomed/rr74.txt | wc
-      8       8      64 
+  [cs15lfa22nx@ieng6-202]:Lab:527$ grep -o "studies" technical/biomed/rr74.txt | wc
+    7       7      56
+  [cs15lfa22nx@ieng6-202]:Lab:528$ grep -oi "studies" technical/biomed/rr74.txt | wc
+    8       8      64 
     ```
 
     Recall that `-o` produces words that only contain the searched string as opposed to entire lines. When paired together with `-i`, we are able to find all instances of the searched string in a text. Here, we can see that the word "studies" was shown to be written 7 times in the first command. This is technically true because S and s are two different characters. However if one wanted to know how many times the word "studies" was written in a text, then this is inaccurate. By ignoring capitilization, we get the true number of times the word has appeared in the text.
