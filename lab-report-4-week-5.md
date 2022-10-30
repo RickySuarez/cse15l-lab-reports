@@ -115,27 +115,27 @@
   ## Example 3:
 
     ```
-    [cs15lfa22nx@ieng6-202]:Lab:532$ grep -o "Studies" technical/biomed/rr74.txt > Studies-results.txt
-    [cs15lfa22nx@ieng6-202]:Lab:533$ grep -o "studies" technical/biomed/rr74.txt > studies-results.txt
-    [cs15lfa22nx@ieng6-202]:Lab:534$ cat Studies-results.txt studies-results.txt
-    Studies
-    studies
-    studies
-    studies
-    studies
-    studies
-    studies
-    studies
-    [cs15lfa22nx@ieng6-202]:Lab:535$ grep -oi "studies" technical/biomed/rr74.txt > all-studies-results.txt
-    [cs15lfa22nx@ieng6-202]:Lab:536$ cat all-studies-results.txt
-    studies
-    studies
-    Studies
-    studies
-    studies
-    studies
-    studies
-    studies
+  [cs15lfa22nx@ieng6-202]:Lab:532$ grep -o "Studies" technical/biomed/rr74.txt > Studies-results.txt
+  [cs15lfa22nx@ieng6-202]:Lab:533$ grep -o "studies" technical/biomed/rr74.txt > studies-results.txt
+  [cs15lfa22nx@ieng6-202]:Lab:534$ cat Studies-results.txt studies-results.txt
+  Studies
+  studies
+  studies
+  studies
+  studies
+  studies
+  studies
+  studies
+  [cs15lfa22nx@ieng6-202]:Lab:535$ grep -oi "studies" technical/biomed/rr74.txt > all-studies-results.txt
+  [cs15lfa22nx@ieng6-202]:Lab:536$ cat all-studies-results.txt
+  studies
+  studies
+  Studies
+  studies
+  studies
+  studies
+  studies
+  studies
     ```
 
     Here we see two alternate ways of arriving to a similar result. In the first set of commands, I had to manually enter different ways that "studies" could be capitalized. I also had to make two separate `.txt` files in order to store to keep track of their instances, and then I had to use the `cat` command with both files in order to display the results. This is extremely time consuming especially when considering that there are many other ways that the word "studies" could be capitalized due to typos (sTudies, stUdies, etc). Instead of thinking of every possible way a string could be spelled, it's much more efficient to use the `-i` option which also gives us the benefit of telling us the order in which the words were used.
