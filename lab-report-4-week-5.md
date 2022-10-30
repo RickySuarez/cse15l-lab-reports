@@ -144,7 +144,7 @@
 
 * `-n`
 
-    The `-n` command is an extension of the usual command except it displays the line number the the reults is found in.
+    The `-n` command is an extension of the usual command except it displays the line number that the reults are found in.
 
   ## Example 1:
 
