@@ -26,7 +26,7 @@
   
   In this example we can see the difference between using `-o` and not using it. Normally the terminal outputs the entire line that a string appears in but using `-o` is helpful in that it only displays the actual strings that contains the argument.
 
-  ## Example 2
+  ## Example 2:
 
   ```
   [cs15lfa22nx@ieng6-201]:skill-demo1:506$ grep -o "studies" ./technical/biomed/rr74.txt | wc
@@ -102,7 +102,7 @@
 
     Here is a basic example of using it to find some paths. In the first line, in both lines, BIOMED is in all capital letters but the second command containing `-i` is the only command the produced results because capitalization is ignored
 
-  ## Example 2
+  ## Example 2:
     ```
     [cs15lfa22nx@ieng6-202]:Lab:527$ grep -o "studies" technical/biomed/rr74.txt | wc
       7       7      56
