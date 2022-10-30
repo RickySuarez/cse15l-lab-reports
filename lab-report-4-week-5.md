@@ -158,7 +158,7 @@
   384:        previous studies, the plasma NO metabolite content in the
   410:        considering studies using NOS-deficient mice. The present
   ```
-  Here is a basic use-case of the `n` command. Here it is used to find all instances that the word "studies" ws used. This is helpful when parsing through a file for specific words and knowing exactly where to find those words.
+  Here is a basic use-case of the `n` command. Here it is used to find all instances that the word "studies" was used. This is helpful when parsing through a file for specific words and knowing exactly where to find those words.
 
   ## Example 2:
 
@@ -244,4 +244,4 @@
   ./technical/plos/pmed.0020247.txt:119:        condom, or request an HIV test. If a husband should die, the wife's in-laws may seize her
   ```
 
-  Here, the command is being used to parse through several `.txt` files through the use of the `*` command. Again, by using both the `-i` and `n` command, we can see every instance that the string "laws" shows up. What is nice about this use however is that the terminal displays what file the string is found in as well as the line. This is helpful when trying to find a piece of data over multiple files without having to check each individual file one at a time. 
+  Here, the command is being used to parse through several `.txt` files through the use of the `*` command. Again, by using both the `-i` and `n` command, we can see every instance that the string "laws" shows up. What is nice about this use is that the terminal displays what file the string is found in as well as the line. This is helpful when trying to find a piece of data over multiple files without having to check each individual file one at a time. 
