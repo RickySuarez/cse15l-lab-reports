@@ -149,7 +149,7 @@
   ## Example 1:
 
     ```
-    [cs15lfa22nx@ieng6-201]:skill-demo1:510$ grep -n "studies" ./technical/biomed/rr74.txt
+  [cs15lfa22nx@ieng6-201]:skill-demo1:510$ grep -n "studies" ./technical/biomed/rr74.txt
   10:        circulation, and previous studies using NOS inhibitors [ 1,
   15:        These discrepancies have been addressed in recent studies
   245:        studies of 4 weeks of hypoxia in mature animals [ 9]. The
