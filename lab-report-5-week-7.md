@@ -1,6 +1,6 @@
 # Week 7 Lab Report
 
-## Part 1: Changing a Parameter in # Keystrokes
+## Part 1: Changing a Parameter in 22 Keystrokes
 
 The goal of this demonstration is to change a parameter and all instances of that parameter in as few keystrokes as possible. The parameter in question is the one called `start`. I will change it so that it is called `base`.
 
