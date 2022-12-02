@@ -8,7 +8,7 @@ The goal of this demonstration is to change a parameter and all instances of tha
 
 ![start](star.png)
 
-`/star<enter>`
+Full key presses in this step: `/star<enter>`
 
 By typing `/star` and then `<enter>` we are able to highlight the text. So far that is 6 keystrokes.
 
@@ -16,15 +16,19 @@ By typing `/star` and then `<enter>` we are able to highlight the text. So far t
 
 ![ce1](de1.png)
 
-`n`
+`<n>`
 
 ![ce2](ce.png)
 
-`ce`
+`<c><e>`
 
 ![base](base1.png)
 
 `base<esc>`
+
+All key presses in this step: `<n><c><e>base<esc>`
+
+Total key presses: `</>star<enter><n><c><e>base<esc>`
 
 By pressing `n` we are able to go to our first instance of `start`. Then by pressing `ce` we are able to delete the word and enter insert mode in order to change the word. After that, type in `base` followed by the `<esc>` key to finish changing the word. So far, this is 14 keystrokes.
 
@@ -32,11 +36,15 @@ By pressing `n` we are able to go to our first instance of `start`. Then by pres
 
 ![NDOT1](ndot1.png)
 
-`n<.>`
+`<n><.>`
 
 ![NDOT2](ndot2.png)
 
-`n<.><esc>:wq`
+`<n><.><esc>:wq`
+
+All key presses in this step: `<n><.><n><.><esc><:><w><q>`
+
+Total key presses: `/star<enter><n><c><e>base<esc><n><.><n><.><esc><:><w><q>`
 
 By pressing the `n` key, we can skip to the next instance of `start`. After that, we can use the `<.>` key in order to repeat our last command which in this case was to change `start` to `base`. Repeat this until all instances of `start` are notw `base`. Then, press `<esc>:wq` in order to quit and save. This entire process took 22 keystrokes.
 
