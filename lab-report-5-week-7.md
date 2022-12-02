@@ -4,6 +4,8 @@
 
 The goal of this demonstration is to change a parameter and all instances of that parameter in as few keystrokes as possible. The parameter in question is the one called `start`. I will change it so that it is called `base`.
 
+Key presses: `/star<enter><n><c><e>base<esc><n><.><n><.><esc><:><w><q>`
+
 * Search for `start`.
 
 ![start](star.png)
